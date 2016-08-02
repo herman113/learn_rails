@@ -1,0 +1,39 @@
+<pre>in gemfile 
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor' #What does this do?
+end
+
+move gem 'sqlite3' to group :development do
+
+
+
+
+wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+This code will install the heroku toolbet
+
+heroku -v
+This doesnt work use the command under this
+
+heroku
+This works
+
+heroku create
+This creates your site in heroku
+
+heroku keys:add
+will add your ssh key from your IDE to heroku
+
+git push heroku master
+Will push your site to production
+
+heroku rename 'put a name eg. practice-movement'
+Will rename your url for heroku
+
+heroku run rake db:migrate
+This will deploy your migration from your db
+
+heroku run rails console
+will run the heroku console
+</pre>

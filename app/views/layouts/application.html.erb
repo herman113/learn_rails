@@ -7,6 +7,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <h1 align="center">LEARN RAILS</h1>
+  <nav align="center">
+    <ul>
+      <li><%= link_to 'Home', root_path %> </li>
+      <li><%= link_to 'Github', codes_github_path %> </li>
+      <li><%= link_to 'Heroku', codes_heroku_path %> </li>
+      <li><%= link_to 'Forms', codes_forms_path %> </li>
+      <li><%= link_to 'Generators', codes_generators_path %> </li>
+      <li><%= link_to 'Git', codes_git_path %> </li>
+      <li><%= link_to 'Routes', codes_routes_path %> </li>
+      <li><%= link_to 'Views', codes_views_path %> </li>
+      <li><%= link_to 'Bootstrap', codes_bootstrap_path %> </li>
+      <li><%= link_to 'Controllers', codes_controller_path %> </li>
+      <li><%= link_to 'Gems', codes_gems_path %> </li>
+      <li><%= link_to 'Models', codes_models_path %> </li>
+      <li><%= link_to 'Console', codes_console_path %> </li>
+      
+       
+    </ul>
+</nav>
 
 <%= yield %>
 

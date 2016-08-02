@@ -1,0 +1,27 @@
+<pre><p>https://github.com/twbs/bootstrap-sass</p>
+<p>This is the website</p>
+
+<p>install</p> 
+gem 'bootstrap-sass', '~> 3.3.6'
+Under this # Use SCSS for 
+
+To install the gem to your app run:
+bundle install --without production
+
+Import Bootstrap styles in app/assets/stylesheets/application.scss
+Create file application.scss in app/assets/stylesheets/
+
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#Require Bootstrap Javascripts in app/assets/javascripts/application.js:
+//= require bootstrap-sprockets
+
+//= require jquery
+//= require jquery_ujs
+//= require bootstrap-sprockets  #Install here
+//= require turbolinks
+//= require_tree .
+
+</pre>

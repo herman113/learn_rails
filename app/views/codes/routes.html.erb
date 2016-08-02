@@ -1,0 +1,30 @@
+<pre>In the config/routes.rb file 
+add the following line to add all the routes for (core_values & articles)
+
+resources :core_values
+
+This will add the following routes:
+
+routes path     HTTP verb link                         controller#action
+
+core_values     GET    /core_values(.:format)          core_values#index
+                POST   /core_values(.:format)          core_values#create
+ new_core_value GET    /core_values/new(.:format)      core_values#new
+edit_core_value GET    /core_values/:id/edit(.:format) core_values#edit
+     core_value GET    /core_values/:id(.:format)      core_values#show
+                PATCH  /core_values/:id(.:format)      core_values#update
+                PUT    /core_values/:id(.:format)      core_values#update
+                DELETE /core_values/:id(.:format)      core_values#destroy
+                
+resources :articles 
+
+     articles   GET    /articles(.:format)             articles#index
+                POST   /articles(.:format)             articles#create
+  new_article   GET    /articles/new(.:format)         articles#new
+ edit_article   GET    /articles/:id/edit(.:format)    articles#edit
+      article   GET    /articles/:id(.:format)         articles#show
+                PATCH  /articles/:id(.:format)         articles#update
+                PUT    /articles/:id(.:format)         articles#update
+                DELETE /articles/:id(.:format)         articles#destroy
+                
+</pre>        

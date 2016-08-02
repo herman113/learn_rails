@@ -1,0 +1,70 @@
+#To run a server on cloud 9
+#syntax/terminal = rails s -b $IP -p $PORT
+
+#TO run server on nitrous
+#rails s -b 0.0.0.0
+
+#This removes directory
+#syntaxterminal rm -rf 'then put name of directory'
+
+
+#rails s -b $IP -p $PORT
+#runs server
+
+#rails new name of app
+#creates a rails application with name
+
+#rvm
+#ruby version manager
+
+
+#Control c
+#stops running server
+
+#pwd
+#print working directory
+
+#mkdir
+#makes a new folder
+
+#rails -v
+#shows rails version
+
+#rake routes | grep name of data table
+#pulls up all article links
+
+#rake routes
+#gives you routes in routes.rb
+
+#rake routes | grep articles
+
+
+#Database
+
+#rails generate migration create_'put table name'
+#Will generate a migration file to generate a table
+
+#rake db:migrate
+#Will push migration file to shema file
+
+#rake db:rollback
+#Will go back one step with the migration  genmeration
+
+#Associations
+
+#rails generate scaffold User username:string email:string
+
+#rake db:migrate
+#creates tables
+
+#rails generate scaffold comment descriptions:text references:user
+
+#rails destroy scaffold comment
+
+#rails generate migration create-users
+#will make a migration file for create_users.rb
+
+#rake db:migrate
+#will put data in migration files to database and display in shema.rb
+
+#rails generate migration add_user_id_to_articles

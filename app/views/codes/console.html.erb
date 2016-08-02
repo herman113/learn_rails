@@ -1,0 +1,132 @@
+<pre>#Rails Console Commands
+
+#article = Article.new
+#creates an article in a table named articles
+
+
+
+#Article.all
+#looks at articles in a table named  articles
+
+
+
+#Article
+#shows attributes(column names) of a table named articles
+
+#article =
+#creates a variable for crud executions
+
+
+
+#article.title
+#shows the contents of a column named title in a table named articles
+
+
+
+#article.save
+#will save for the selected article
+
+
+
+#article = Article.new(title: "Second article",description: "second Description")
+#will initiate a creation for an article with content put in to the attributes title and description but not created until saved
+
+
+
+#Article.create(title: "Third article",description: "Third Description")
+#This  will create an article with content put in to the attributes, title and description, automatically saved
+
+
+
+#exit
+#exits rails console
+
+
+
+#article = Article.find(2)
+#creates a variable for article and finds article 2
+
+
+
+#article.title = "This is an edited article"
+#initiates an edit to the variable article = Article.find(2) not saved
+
+
+
+#article = Artice.find(3)
+#creates a variable for article and finds  article 3
+
+
+
+#article.destroy
+#deletes an article for the last variable set for article
+
+
+
+#article.create
+
+
+
+#validates :title, presence: true
+#will not allow something to hit a database unless title is present
+
+
+
+#reload!
+#resets rails console alternative is exit and start up
+
+
+
+#article.errors.any?
+#asks if there were any errors made answers with a true or false statement.
+
+
+
+#article.errors.full_messages
+
+#resources :Put name of Table name plural here
+#This will create routes for a table
+
+#User Model
+
+#in user.rb put     has_many :comments
+#this will allow associations between the user model and comment model
+
+#user = User.first
+#Will pick the user by number(1)
+
+#user = User.second
+#Will pick the user by number(2)
+
+#user.comments
+#will look at comment by user selected
+
+#we dont have to use user.save?
+
+#user
+#will display 
+
+#user.valid?
+#will tell you if the email is valid
+
+#Comment Model
+
+#comment = Comment.new(description: "This is a new comment", user: user)   user_id(why not?)vertual atribute?
+
+#comment.save
+
+#associations
+
+#user.comments
+
+#user.password = "password"
+
+#user.save
+
+#user.authenticate("notrightpassword")
+#user.authenticate("password")
+
+#user.toggle!(:admin)
+#will change boolean
+
+</pre>
