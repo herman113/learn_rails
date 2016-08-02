@@ -1,11 +1,11 @@
-<pre>In the config/routes.rb file 
-add the following line to add all the routes for (core_values & articles)
+<pre>
+<h1>Console - rake routes</h1>
+In the config/routes.rb file add 
 
-resources :core_values
+<p><b>resources :core_values</b></p>
+<p>and get the routes below:</p>
 
-This will add the following routes:
-
-routes path     HTTP verb link                         controller#action
+<pre style="color:red;">routes path     HTTP verb link                         controller#action
 
 core_values     GET    /core_values(.:format)          core_values#index
                 POST   /core_values(.:format)          core_values#create
@@ -15,6 +15,12 @@ edit_core_value GET    /core_values/:id/edit(.:format) core_values#edit
                 PATCH  /core_values/:id(.:format)      core_values#update
                 PUT    /core_values/:id(.:format)      core_values#update
                 DELETE /core_values/:id(.:format)      core_values#destroy
+</pre>                 
+<p>To view the routes above in the console add</p>
+<p><b>rake routes</b></p>
+             
+<h1>Console - rake routes</h1>
+In the config/routes.rb file add
                 
 resources :articles 
 
@@ -27,4 +33,8 @@ resources :articles
                 PUT    /articles/:id(.:format)         articles#update
                 DELETE /articles/:id(.:format)         articles#destroy
                 
-</pre>        
+</pre>
+
+<h1>routes.rb</h1>
+<p>resources :user_stocks, except: [:show, :edit, :update]</p>
+<p>This will create routes for user_stocks except show, edit and update</p>
