@@ -2,6 +2,7 @@ class CodesController < ApplicationController
   
   def home
   end
+  
   def bootstrap
   end
 

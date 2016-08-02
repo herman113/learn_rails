@@ -1,32 +1,19 @@
 Rails.application.routes.draw do
   
-  root "code#home"
-  
-   get 'codes/models'
-
+  root "codes#home"
+  get 'codes/models'
   get 'codes/gems'
-
-  
-  
   get 'codes/bootstrap'
-
   get 'codes/controller'
-
   get 'codes/forms'
-
   get 'codes/generators'
-
   get 'codes/git'
-
   get 'codes/github'
-
   get 'codes/heroku'
-
   get 'codes/console'
-
   get 'codes/routes'
-
   get 'codes/views'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
