@@ -51,26 +51,115 @@ Dispays your public ssh key
 
 git remote -v
 
-Master Branch
+<h2>Git references:</h2>
+
+git-scm.com
+
+git-scm.com/book/en/v2
+
+gitref.org
+
+First time (required only once to configure git for your environment):
+
+git config --global user.name "Your name"
+
+git config --global user.email "Your email"
+
+replace Your name and Your email above with your actual name and email address which you want shown on repo
+
+To display git config settings:
+
+git config --list
+
+Some useful git commands:
+
+To initialize a git repository for your application (do this from within the application directory) ->
+
+git init
+
+To add/track all files ->
+
+git add -A
+
+To commit changes/updates/additions to repository ->
+
+git commit -m "A useful message to help remember details of commit"
+
+To check current state of file updates with already committed code in repo ->
+
+git status
+
+To reject latest changes ->
+
+git checkout -f
+
+Site to create free online code repositories:
+
+github.com
+
+bitbucket.org
+
+<h2>To display your public SSH key:</h2>
+
+cat ~/.ssh/id_rsa.pub
+
+When creating github repo for application ensure you click the SSH button then push existing repo:
+
+git remote add origin git@github.com:yourgithubaccountname/alpha-blog.git
+
+git push -u origin master # Remember you only need to use this command the first time
+
+To view remotes setup in your environment (from your app directory):
+
+git remote -v
+
+For future pushes to repository:
+
+git push
+
+
+<h2>To create a feature branch:</h2>
+
+git checkout -b nameofbranch
+
+To create a feature branch named create-users:
 
 git checkout -b create-users
-will create a branch called create-users
+
+To view list of branches:
 
 git branch
-will show the branches for this application
+
+To move to master branch:
 
 git checkout master
-will switch to the master branch
 
-git checkout create-users
-will switch to the create-users branch
+To move to already created feature branch:
 
-git merge        name of branch
-This will merge a branch to the master branch
+git checkout nameofbranch
 
-git branch -d branch name
-will delete a branch if it was merged
+Important to remember is to always have master branch deployable to production and work on all new features and additions in feature branches
 
-git branch -D branch name
-will delete a branch if it wasnt yet merged
+<b>To make a commit of the changes made in the feature branch:</b>
+
+git add -A
+
+git commit -m "create users table and user model"
+
+To merge the changes in the feature branch to the master branch first switch to master branch:
+
+git checkout master
+
+git merge nameofbranch
+
+git push to push code to repository
+
+To delete a feature branch that is no longer needed and has been merged to master already:
+
+git branch -d nameofbranch
+
+To delete a feature branch that is no longer needed but has NOT been merged to master:
+
+git branch -D nameofbranch
+
 </pre>

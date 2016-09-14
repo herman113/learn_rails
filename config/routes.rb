@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
   
+  get 'codes/table_associations'
+
+  get 'course3/index'
+  get 'course3/l48'
+
+  get 'course/index'
+
   root "codes#home"
   get 'codes/models'
   get 'codes/gems'
@@ -13,6 +20,9 @@ Rails.application.routes.draw do
   get 'codes/console'
   get 'codes/routes'
   get 'codes/views'
+  get 'codes/course'
+  get 'codes/railsapp'
+  get 'codes/users'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

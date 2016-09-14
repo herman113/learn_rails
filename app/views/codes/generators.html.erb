@@ -1,14 +1,36 @@
 <h1 align="center">Generators</h1>
 
-<h2>To generate a model named <span style="color:red;">user_stock</span></h2>
-    
-  <ul> <h3>In the console put the code<span style="color:red;"> rails generate scaffold UserStock user_id:integer stock_id:integer</span> </h3>
-    <li>Generates the code <b>resources :user_stocks</b> in config/routes.rb)</li>
-    <li>Generates a file named <b>user_stock.rb</b> in /models </li>
-    <li>Generates a file named <b>user_stocks_controller.rb</b> in app/controllers/</li>
-  </ul>
-    
-    
+<div>
+  <h2>To generate a model named user_stock</h2>
+  <p>rails generate scaffold UserStock user_id:integer stock_id:integer</p>
+  <p>Generates a file named <b>user_stock.rb</b> in /models </p>
+  <p>Generates a file named <b>user_stocks_controller.rb</b> in app/controllers/</p>
+  <hr>
+  <p>resources :user_stocks in config/routes.rb)</p>
+  <p>Creates routes for UserStock generator</p>
+</div>
+<hr>
+<div>
+  <h2> rails generate scaffold Post title:string body:text</h2>
+  <p>Forgot what this does</p>
+</div>
+<hr>
+<div>
+  <h2>To generate a migration to create a table (in this example articles):</h2> 
+  <p>rails generate migration create_articles</p>
+  <h3>To add a column (example: created_at column) to the articles table:</h3>
+  <p>rails generate migration add_created_at_to_articles</p>
+</div>  
+<hr>
+<div>
+  <h2>Scaffold generator command to create Article model, articles controller, views for articles and migration file to create articles table:</h2>
+  <p>rails generate scaffold Article title:string description:text</p>
+</div>
+<hr>
+<diV>
+  <h2>To create a migration file to create the categories table:</h2>
+  <p>rails generate migration create_categories</p>
+</diV>
     
     
     
