@@ -190,7 +190,28 @@ ul li ul li ul li:hover a {
     color: blue;
 }
 
+section {
+    background-image: url("/assets/gradient-red-pink-linear-1920x1080-c2-f08080-db7093-a-165-f-14.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 50%;
+    margin-left: 25%;
+    border: dotted 10px black;
+    
+}
 
+th {
+    background-color: grey;
+}
 
+table,
+tr,
+th,
+td {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px;
+    border: solid 1px black;
+}
 
 

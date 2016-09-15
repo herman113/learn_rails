@@ -12,21 +12,11 @@
   <nav align="center">
     <ul>
       <li><%= link_to 'Home', root_path %> </li>
-      <li><%= link_to 'Course', course_index_path %> 
-        <ul>
-          <li>Section 1</li>
-          <li><%= link_to 'Section 3', course3_index_path %>
-            <ul>
-              <li><%= link_to 'l48', course3_l48_path %></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
       <li><%= link_to 'Rails App', codes_railsapp_path %>
         <ul>
           <li><%= link_to 'Github', codes_github_path %> </li>
           <li><%= link_to 'Heroku', codes_heroku_path %> </li>
-          <li><%= link_to 'Forms', codes_forms_path %> </li>
+          <li><%= link_to 'Forms', new_user_path %> </li>
           <li><%= link_to 'Generators', codes_generators_path %> </li>
           <li><%= link_to 'Git', codes_git_path %> </li>
           <li><%= link_to 'Routes', codes_routes_path %> </li>
@@ -38,7 +28,6 @@
           <li><%= link_to 'Console', codes_console_path %> </li>
           <li><%= link_to 'Users', codes_users_path %> </li>
           <li><%= link_to 'Table Associations', codes_table_associations_path %> </li>
-
         </ul>
       </li>
     </ul>
